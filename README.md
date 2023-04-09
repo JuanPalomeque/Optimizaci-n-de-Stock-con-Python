@@ -1,2 +1,3 @@
-# Optimizaci-n-de-Stock-con-Python
+# Optimizacion-de-Stock-con-Python
 Fórmulas para operaciones con Stocks
+
