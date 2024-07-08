@@ -1,5 +1,5 @@
-# Optimizacion-de-Stock-con-Python
-Fórmulas para operaciones con Stocks
+# Optimizacion de niveles de Stock 
+# Fórmulas para operaciones con Stocks
 
 # Defino
 def Cantidad_Optima(S, D, H):
