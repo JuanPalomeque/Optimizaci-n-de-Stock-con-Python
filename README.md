@@ -2,20 +2,21 @@
 # Fórmulas para operaciones con Stocks
 
 # Defino
-def Cantidad_Optima(S, D, H):
+def Cantidad_Optima(C, D, H):
     """
-    Economic Order Quantity
+    Cantidad económica de ordenes
 
-    Arguments:
-    S: ordering cost
-    D: annual quantity demanded
-    H: holding cost per unit
+    Argumentos:
+    C: costo de la orden
+    D: cantidad anual demandada
+    H: costo de tener el producto
+    """
 
-    Q = (np.sqrt(2 * S * D / H))
-    number_of_orders = D / Q
-    time_between_cycles = 12 / number_of_orders
-    AOC = D / Q * S
+    Q = (np.sqrt(2 * C * D / H))
+    numero_de_ordenes = D / Q
+    tiempo_entre_ciclos = 12 / number_of_orders
+    AOC = D / Q * C
     AHC = Q / 2 * H
     ATC = AOC + AHC
 
-    return [Q, number_of_orders, time_between_cycles, AOC, AHC, ATC]
+    return [Q, numero_de_ordenes, tiempo_entre_ciclos, AOC, AHC, ATC]
